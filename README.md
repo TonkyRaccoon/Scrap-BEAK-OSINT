@@ -9,6 +9,11 @@
 ## ✨ Features
 
 ### 🖱️ Right-Click Context Menus
+
+<p align="center">
+  <img src="image/context-menu.png" alt="Right-Click Context Menu" width="220">
+</p>
+
 Select any text (IP, domain, hash, CVE, email, username…) and right-click to instantly search it across:
 
 | Category | Tools |
@@ -27,6 +32,11 @@ Select any text (IP, domain, hash, CVE, email, username…) and right-click to i
 | **🕵️ Threat Intelligence** | AlienVault OTX, Pulsedive, ThreatFox |
 
 ### 🚀 Popup Quick Actions
+
+<p align="center">
+  <img src="image/popup.png" alt="Popup Quick Actions" width="370">
+</p>
+
 Click the extension icon for:
 - **Quick search bar** — paste any artifact and query 12 major tools in one click
 - **Defang / Refang** — safely share IOCs
@@ -59,6 +69,9 @@ Scrap-BEAK-OSINT/
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
+├── image/
+│   ├── popup.png          # Popup UI screenshot
+│   └── context-menu.png   # Context menu screenshot
 └── README.md
 ```
 
