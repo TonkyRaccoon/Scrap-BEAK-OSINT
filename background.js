@@ -1,985 +1,330 @@
-// create Whois context menus
-chrome.contextMenus.create({
-    "id": "whois",
-    "title": "whois",
-    "contexts":["selection", "link"]
-});
-
-// child whois menu
-
-chrome.contextMenus.create({
-    "id": "domaintools whois",
-    "title": "Domain Tools",
-    "contexts":["selection", "link"],
-    "parentId": "whois"
-});
-
-chrome.contextMenus.create({
-    "id": "domainwatch whois",
-    "title": "Domainwatch whois",
-    "contexts": ["selection", "link"],
-    "parentId":"whois"
-});
-
-chrome.contextMenus.create({
-    "id": "securitytrails whois",
-    "title": "SecurityTrails",
-    "contexts": ["selection", "link"],
-    "parentId":"whois"
-});
-
-chrome.contextMenus.create({
-    "id": "whoisds",
-    "title": "WHOISDS",
-    "contexts":["selection", "link"],
-    "parentId": "whois"
-});
-
-// create IP address context menus
-
-chrome.contextMenus.create({
-    "id": "IP",
-    "title": "IP",
-    "contexts": ["selection", "link"]
-})
-//IPv4
-chrome.contextMenus.create({
-    "id": "IPv4",
-    "title": "IPv4",
-    "contexts":["selection", "link"],
-    "parentId":"IP"
-});
-
-chrome.contextMenus.create({
-    "id":"IPTracker",
-    "title":"IPTracker",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"abuseIPDB",
-    "title":"AbuseIPDB",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"hackertarget IP",
-    "title":"HackerTarget",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"censys IP",
-    "title":"Censys",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"shodan",
-    "title":"Shodan IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"fofa",
-    "title":"FOFA IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"virustotal",
-    "title":"VirusTotal IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-chrome.contextMenus.create({
-    "id": "greynoise",
-    "title": "Greynoise",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id": "dnslytics ip",
-    "title": "DNSlytics",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4"
-})
-//IPv4
-chrome.contextMenus.create({
-    "id": "IPv4",
-    "title": "IPv4",
-    "contexts":["selection", "link"],
-    "parentId":"IP"
-});
-
-chrome.contextMenus.create({
-    "id":"abuseIPDB",
-    "title":"AbuseIPDB",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"hackertarget IP",
-    "title":"HackerTarget",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"censys IP",
-    "title":"Censys",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"shodan",
-    "title":"Shodan IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"fofa",
-    "title":"FOFA IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id":"virustotal",
-    "title":"VirusTotal IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-chrome.contextMenus.create({
-    "id": "greynoise",
-    "title": "Greynoise",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id": "dnslytics ip",
-    "title": "DNSlytics",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id": "tor ip",
-    "title": "Tor Relay IP",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id": "tor ip",
-    "title": "Tor Relay IP",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id": "threatcrowd ip",
-    "title": "ThreatCrowd IP",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4",
-});
-
-chrome.contextMenus.create({
-    "id": "ipalyzer",
-    "title": "IPAlyzer",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
-    "id": "bgpview ip",
-    "title": "BGPView IP",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv4"
-});
-
-//IPv6
-chrome.contextMenus.create({
-    "id": "IPv6",
-    "title": "IPv6",
-    "contexts": ["selection", "link"],
-    "parentId": "IP"
-});
-
-chrome.contextMenus.create({
-    "id": "dnslytics v6",
-    "title": "DNSlytics IPv6",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv6"
-});
-
-chrome.contextMenus.create({
-    "id": "ultratools v6",
-    "title": "Ultratools v6",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv6",
-});
-
-chrome.contextMenus.create({
-    "id": "dnslytics v6",
-    "title": "DNSlytics IPv6",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv6"
-});
-
-chrome.contextMenus.create({
-    "id": "ultratools v6",
-    "title": "Ultratools v6",
-    "contexts": ["selection", "link"],
-    "parentId": "IPv6"
-});
-
-
-// create ASN search context menus
-chrome.contextMenus.create({
-    "id": "asn",
-    "title": "ASN",
-    "contexts": ["selection", "link"]
-});
-
-chrome.contextMenus.create({
-    "id": "dnslytics asn",
-    "title": "DNSlytics ASN",
-    "contexts": ["selection", "link"],
-    "parentId": "asn",
-});
-
-chrome.contextMenus.create({
-    "id": "dnslytics asn",
-    "title": "DNSlytics ASN",
-    "contexts": ["selection", "link"],
-    "parentId": "asn"
-});
-
-chrome.contextMenus.create({
-    "id": "bgpview asn",
-    "title": "BGPView ASN",
-    "contexts": ["selection", "link"],
-    "parentId": "asn"
-});
-
-// create Domain search context menus
-
-chrome.contextMenus.create({
-    "id": "domain",
-    "title": "Domain",
-    "contexts":["selection", "link"]
-});
-
-
-chrome.contextMenus.create({
-    "id":"censys Domain",
-    "title":"Censys",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id":"shodan Domain",
-    "title":"Shodan",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id":"domainwatch",
-    "title":"DomainWatch",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id":"virustotal Domain",
-    "title":"VirusTotal",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id": "tor domain",
-    "title": "Tor Relay domain",
-    "contexts": ["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id": "threatcrowd domain",
-    "title": "ThreatCrowd Domain",
-    "contexts": ["selection", "link"],
-    "parentId": "domain",
-});
-
-chrome.contextMenus.create({
-    "id":"censys Domain",
-    "title":"Censys",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id":"shodan Domain",
-    "title":"Shodan",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id": "hackertarget traceroute",
-    "title": "HakcerTarget Traceroute",
-    "contexts":["selection","link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id":"domainwatch",
-    "title":"DomainWatch",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id":"virustotal Domain",
-    "title":"VirusTotal",
-    "contexts":["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id": "tor domain",
-    "title": "Tor Relay domain",
-    "contexts": ["selection", "link"],
-    "parentId": "domain"
-});
-
-chrome.contextMenus.create({
-    "id": "threatcrowd domain",
-    "title": "ThreatCrowd Domain",
-    "contexts": ["selection", "link"],
-    "parentId": "domain"
-});
-
-// create SSL certificate search context menus
-
-chrome.contextMenus.create({
-    "id": "sslcertificate",
-    "title":"SSL-Certificate",
-    "contexts":["selection", "link"],
-});
-
-chrome.contextMenus.create({
-    "id":"crt.sh",
-    "title":"crt.sh",
-    "contexts":["selection","link"],
-    "parentId":"sslcertificate"
-});
-
-chrome.contextMenus.create({
-    "id":"ssl-bl",
-    "title":"Abuse.ch SSLBL-Hash",
-    "contexts":["selection", "link"],
-    "parentId":"sslcertificate"
-});
-
-// create URL search context menus
-
-chrome.contextMenus.create({
-    "id": "URL",
-    "title": "URL",
-    "contexts": ["selection", "link"]
-});
-
-chrome.contextMenus.create({
-    "id":"urlscan",
-    "title":"URLscan",
-    "contexts":["selection", "link"],
-    "parentId": "URL"
-});
-
-chrome.contextMenus.create({
-    "id":"aguse",
-    "title":"aguse.jp",
-    "contexts":["selection","link"],
-    "parentId":"URL"
-});
-
-chrome.contextMenus.create({
-    "id":"check-host",
-    "title":"Check-Host",
-    "contexts":["selection","link"],
-    "parentId":"URL",
-});
-
-chrome.contextMenus.create({
-    "id":"urlscan",
-    "title":"URLscan",
-    "contexts":["selection", "link"],
-    "parentId": "URL"
-});
-
-chrome.contextMenus.create({
-    "id": "archive",
-    "title": "Wayback Machine",
-    "contexts": ["selection", "link"],
-    "parentId": "URL"
-});
-
-
-//create Vulnerability context menus
-chrome.contextMenus.create({
-    "id": "Vuln",
-    "title": "Vuln",
-    "contexts":["selection", "link"]
-});
-
-chrome.contextMenus.create({
-    "id": "fortiguard",
-    "title": "FortiGuard CVE",
-    "contexts":["selection", "link"],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "sploitus",
-    "title": "Sploitus",
-    "contexts":["selection", "link"],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "vulmon",
-    "title":"Vulmon",
-    "contexts":["selection", "link"],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "cxsecurity",
-    "title": "CXSecurity",
-    "contexts":["selection", "link" ],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "vulncode",
-    "title": "Vulncode DB",
-    "contexts": ["selection", "link"],
-    "parentId": "Vuln"
-});
-
-// Create Malicious Software Search context menus
-chrome.contextMenus.create({
-    "id": "hash",
-    "title": "Hashes",
-    "contexts":["selection", "link"]
-});
-
-chrome.contextMenus.create({
-    "id": "malshare",
-    "title": "Malshare",
-    "contexts":["selection", "link"],
-    "parentId": "hash"
-});
-
-chrome.contextMenus.create({
-    "id": "virustotal hash",
-    "title": "VirusTotal Hash",
-    "contexts": ["selection", "link"],
-    "parentId": "hash"
-});
-
-chrome.contextMenus.create({
-    "id": "circl",
-    "title": "CIRCL CVE",
-    "contexts": ["selection","link"],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "fortiguard",
-    "title": "FortiGuard CVE",
-    "contexts":["selection", "link"],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "sploitus",
-    "title": "Sploitus",
-    "contexts":["selection", "link"],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "vulmon",
-    "title":"Vulmon",
-    "contexts":["selection", "link"],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "cxsecurity",
-    "title": "CXSecurity",
-    "contexts":["selection", "link" ],
-    "parentId": "Vuln"
-});
-
-chrome.contextMenus.create({
-    "id": "vulncode",
-    "title": "Vulncode DB",
-    "contexts": ["selection", "link"],
-    "parentId": "Vuln"
-});
-
-// Create Malicious Software Search context menus
-chrome.contextMenus.create({
-    "id": "hash",
-    "title": "Hashes",
-    "contexts":["selection", "link"]
-});
-
-chrome.contextMenus.create({
-    "id": "malshare",
-    "title": "Malshare",
-    "contexts":["selection", "link"],
-    "parentId": "hash"
-});
-
-chrome.contextMenus.create({
-    "id": "virustotal hash",
-    "title": "VirusTotal Hash",
-    "contexts": ["selection", "link"],
-    "parentId": "hash"
-});
-
-chrome.contextMenus.create({
-    "id":"hybrid analysis",
-    "title": "Hybrid Analysis Hash",
-    "contexts":["selection", "link"],
-    "parentId":"hash"
-});
-
-//create SNS search context menus
-
-chrome.contextMenus.create({
-    "id": "social",
-    "title": "Social",
-    "contexts":["selection", "link"]
-});
-
-chrome.contextMenus.create({
-    "id":"twitter",
-    "title":"Twitter",
-    "contexts":["selection", "link"],
-    "parentId": "social"
-});
-
-chrome.contextMenus.create({
-    "id":"github",
-    "title":"Github",
-    "contexts":["selection", "link"],
-    "parentId": "social"
-});
-
-//SNS Account search
-chrome.contextMenus.create({
-    "id": "social account",
-    "title": "Social Account",
-    "contexts":["selection","link"],
-    "parentId": "social"
-});
-
-chrome.contextMenus.create({
-    "id":"twitter",
-    "title":"Twitter",
-    "contexts":["selection", "link"],
-    "parentId": "social account"
-});
-
-
-
-chrome.contextMenus.create({
-    "id":"github",
-    "title":"Github",
-    "contexts":["selection", "link"],
-    "parentId": "social account"
-});
-
-
-chrome.contextMenus.create({
-    "id":"facebook",
-    "title":"FaceBook",
-    "contexts":["selection", "link"],
-    "parentId": "social"
-});
-
-chrome.contextMenus.create({
-    "id":"instagram",
-    "title":"Instagram",
-    "contexts":["selection", "link"],
-    "parentId": "social"
-});
-
-chrome.contextMenus.create({
-    "id":"linkedin",
-    "title":"LinkedIn",
-    "contexts":["selection", "link"],
-    "parentId": "social"
-});
-
-chrome.contextMenus.create({
-    "id": "pinterest",
-    "title": "Pinterest",
-    "contexts":["selection", "link"],
-    "parentId": "social"
-});
-
-chrome.contextMenus.create({
-    "id":"facebook",
-    "title":"FaceBook",
-    "contexts":["selection", "link"],
-    "parentId": "social account"
-});
-
-chrome.contextMenus.create({
-    "id":"instagram",
-    "title":"Instagram",
-    "contexts":["selection", "link"],
-    "parentId": "social account"
-});
-
-chrome.contextMenus.create({
-    "id":"linkedin",
-    "title":"LinkedIn",
-    "contexts":["selection", "link"],
-    "parentId": "social account"
-});
-
-chrome.contextMenus.create({
-    "id": "pinterest",
-    "title": "Pinterest",
-    "contexts":["selection", "link"],
-    "parentId": "social account"
-});
-
-
-//SNS Timeline search
-chrome.contextMenus.create({
-    "id": "timeline",
-    "title": "TimeLine",
-    "contexts":["selection", "link"],
-    "parentId": "social"
-});
-
-chrome.contextMenus.create({
-    "id": "twittertl",
-    "title": "Twitter Timeline",
-    "contexts":["selection","link"],
-    "parentId": "timeline"
-});
-
-chrome.contextMenus.create({
-    "id": "facebooktl",
-    "title": "FaceBook TimeLine",
-    "contexts":["selection","link"],
-    "parentId": "timeline"
-});
-
-chrome.contextMenus.create({
-    "id": "reddit",
-    "title": "reddit",
-    "contexts":["selection","link"],
-    "parentId": "timeline"
-});
-
-
-//create empty variables
-var url = "";
-var artifact = "";
-var v6URI = "";
-
-//refang function
-function refangArtifact(artifact){
-    while(artifact.includes("[.]")){
-        artifact = artifact.replace("[.]",".");
-    }
-    if(artifact.includes("hxxp://")){
-        artifact = artifact.replace("hxxp://","http://");
-    }
-    if(artifact.includes("hxxps://")){
-        artifact = artifact.replace("hxxps://","https://");
-    }
-    if(artifact.includes("[:]//")){
-        artifact = artifact.replace("[:]//","://")
-    }
-    return artifact;
+// ============================================================
+//  Scrap BEAK OSINT v2.0 — Background Service Worker
+//  Clean, deduplicated, Manifest V3 compliant
+// ============================================================
+
+// ── Menu structure definition ────────────────────────────────
+// Each category holds its items. IDs must be unique.
+const MENU_TREE = [
+  // ─── WHOIS ─────────────────────────────────────────────────
+  {
+    id: "whois", title: "🔍 WHOIS", children: [
+      { id: "whois-domaintools",    title: "DomainTools" },
+      { id: "whois-securitytrails", title: "SecurityTrails" },
+      { id: "whois-who-is",         title: "Who.is" },
+    ]
+  },
+
+  // ─── IP — IPv4 ────────────────────────────────────────────
+  {
+    id: "ip", title: "🌐 IP Address", children: [
+      {
+        id: "ipv4", title: "IPv4", children: [
+          { id: "ipv4-abuseipdb",      title: "AbuseIPDB" },
+          { id: "ipv4-shodan",         title: "Shodan" },
+          { id: "ipv4-censys",         title: "Censys" },
+          { id: "ipv4-virustotal",     title: "VirusTotal" },
+          { id: "ipv4-greynoise",      title: "GreyNoise" },
+          { id: "ipv4-hackertarget",   title: "HackerTarget Reverse IP" },
+          { id: "ipv4-dnslytics",      title: "DNSlytics" },
+          { id: "ipv4-tor",            title: "Tor Relay Search" },
+          { id: "ipv4-ipinfo",         title: "IPinfo.io" },
+          { id: "ipv4-bgptools",       title: "BGP.tools" },
+          { id: "ipv4-criminalip",     title: "Criminal IP" },
+        ]
+      },
+      {
+        id: "ipv6", title: "IPv6", children: [
+          { id: "ipv6-dnslytics",  title: "DNSlytics IPv6" },
+          { id: "ipv6-ipinfo",     title: "IPinfo.io" },
+          { id: "ipv6-shodan",     title: "Shodan" },
+        ]
+      }
+    ]
+  },
+
+  // ─── DOMAIN ────────────────────────────────────────────────
+  {
+    id: "domain", title: "🏠 Domain", children: [
+      { id: "domain-shodan",          title: "Shodan" },
+      { id: "domain-censys",          title: "Censys" },
+      { id: "domain-virustotal",      title: "VirusTotal" },
+      { id: "domain-securitytrails",  title: "SecurityTrails" },
+      { id: "domain-urlhaus",         title: "URLhaus" },
+      { id: "domain-securityheaders", title: "Security Headers" },
+      { id: "domain-hackertarget-tr", title: "HackerTarget Traceroute" },
+      { id: "domain-tor",             title: "Tor Relay Search" },
+      { id: "domain-dnsdumpster",     title: "DNSDumpster" },
+      { id: "domain-subdomainfinder", title: "Subfinder (crt.sh)" },
+    ]
+  },
+
+  // ─── ASN ───────────────────────────────────────────────────
+  {
+    id: "asn", title: "📡 ASN", children: [
+      { id: "asn-dnslytics", title: "DNSlytics" },
+      { id: "asn-bgptools",  title: "BGP.tools" },
+      { id: "asn-he",        title: "Hurricane Electric" },
+    ]
+  },
+
+  // ─── SSL CERTIFICATES ─────────────────────────────────────
+  {
+    id: "ssl", title: "🔒 SSL / Certificate", children: [
+      { id: "ssl-crtsh",   title: "crt.sh" },
+      { id: "ssl-sslbl",   title: "Abuse.ch SSLBL" },
+      { id: "ssl-ssllabs", title: "SSL Labs" },
+    ]
+  },
+
+  // ─── URL ───────────────────────────────────────────────────
+  {
+    id: "url", title: "🔗 URL / Website", children: [
+      { id: "url-urlscan",   title: "URLScan.io" },
+      { id: "url-checkhost", title: "Check-Host" },
+      { id: "url-archive",   title: "Wayback Machine" },
+      { id: "url-aguse",     title: "aguse.jp" },
+      { id: "url-urlhaus",   title: "URLhaus" },
+      { id: "url-httpstatus", title: "HTTP Status" },
+    ]
+  },
+
+  // ─── VULNERABILITY / CVE ──────────────────────────────────
+  {
+    id: "vuln", title: "🛡️ Vulnerability / CVE", children: [
+      { id: "vuln-nist",       title: "NIST NVD" },
+      { id: "vuln-circl",      title: "CIRCL CVE" },
+      { id: "vuln-sploitus",   title: "Sploitus" },
+      { id: "vuln-vulmon",     title: "Vulmon" },
+      { id: "vuln-fortiguard", title: "FortiGuard" },
+      { id: "vuln-exploitdb",  title: "Exploit-DB" },
+      { id: "vuln-cvedetails", title: "CVE Details" },
+    ]
+  },
+
+  // ─── HASHES / MALWARE ─────────────────────────────────────
+  {
+    id: "hash", title: "🦠 Hash / Malware", children: [
+      { id: "hash-virustotal",  title: "VirusTotal" },
+      { id: "hash-malshare",    title: "MalShare" },
+      { id: "hash-hybridanalysis", title: "Hybrid Analysis" },
+      { id: "hash-malwarebazaar", title: "MalwareBazaar" },
+      { id: "hash-triage",       title: "Triage" },
+    ]
+  },
+
+  // ─── EMAIL ─────────────────────────────────────────────────
+  {
+    id: "email", title: "✉️ Email", children: [
+      { id: "email-haveibeenpwned", title: "Have I Been Pwned" },
+      { id: "email-hunter",        title: "Hunter.io" },
+      { id: "email-epieos",        title: "Epieos" },
+    ]
+  },
+
+  // ─── SOCIAL / OSINT ───────────────────────────────────────
+  {
+    id: "social", title: "👤 Social / OSINT", children: [
+      {
+        id: "social-profiles", title: "Profile Lookup", children: [
+          { id: "social-x",         title: "X (Twitter)" },
+          { id: "social-github",    title: "GitHub" },
+          { id: "social-facebook",  title: "Facebook" },
+          { id: "social-instagram", title: "Instagram" },
+          { id: "social-linkedin",  title: "LinkedIn" },
+          { id: "social-reddit",    title: "Reddit" },
+        ]
+      },
+      {
+        id: "social-search", title: "Search / Timeline", children: [
+          { id: "social-x-search",        title: "X (Twitter) Search" },
+          { id: "social-facebook-search",  title: "Facebook Search" },
+          { id: "social-reddit-search",    title: "Reddit Search" },
+          { id: "social-google-dork",      title: "Google Dork" },
+        ]
+      },
+    ]
+  },
+
+  // ─── ENCODING / DECODE TOOLS ──────────────────────────────
+  {
+    id: "encode", title: "🧰 Encode / Decode", children: [
+      { id: "encode-cyberchef",   title: "CyberChef" },
+      { id: "encode-dencode",     title: "DenCode" },
+      { id: "encode-base64",      title: "Base64 Decode" },
+    ]
+  },
+
+  // ─── THREAT INTEL ─────────────────────────────────────────
+  {
+    id: "threatintel", title: "🕵️ Threat Intelligence", children: [
+      { id: "ti-otx",          title: "AlienVault OTX" },
+      { id: "ti-pulsedive",    title: "Pulsedive" },
+      { id: "ti-threatfox",    title: "ThreatFox" },
+    ]
+  },
+];
+
+
+// ── URL mapping ──────────────────────────────────────────────
+// Each menu item ID maps to a function that returns the target URL.
+// `a` = artifact (cleaned text), `e` = encodeURIComponent(artifact)
+const URL_MAP = {
+  // WHOIS
+  "whois-domaintools":    a => `https://whois.domaintools.com/${a}`,
+  "whois-securitytrails": a => `https://securitytrails.com/domain/${a}/dns`,
+  "whois-who-is":         a => `https://who.is/whois/${a}`,
+
+  // IPv4
+  "ipv4-abuseipdb":    a => `https://www.abuseipdb.com/check/${a}`,
+  "ipv4-shodan":       a => `https://www.shodan.io/host/${a}`,
+  "ipv4-censys":       a => `https://app.censys.io/hosts/${a}`,
+  "ipv4-virustotal":   a => `https://www.virustotal.com/gui/ip-address/${a}`,
+  "ipv4-greynoise":    a => `https://viz.greynoise.io/ip/${a}`,
+  "ipv4-hackertarget": a => `https://api.hackertarget.com/reverseiplookup/?q=${a}`,
+  "ipv4-dnslytics":    a => `https://dnslytics.com/ip/${a}`,
+  "ipv4-tor":          a => `https://metrics.torproject.org/rs.html#search/${a}`,
+  "ipv4-ipinfo":       a => `https://ipinfo.io/${a}`,
+  "ipv4-bgptools":     a => `https://bgp.tools/prefix/${a}`,
+  "ipv4-criminalip":   a => `https://www.criminalip.io/asset/report/${a}`,
+
+  // IPv6
+  "ipv6-dnslytics": a => `https://dnslytics.com/ipv6/${a}`,
+  "ipv6-ipinfo":    a => `https://ipinfo.io/${a}`,
+  "ipv6-shodan":    a => `https://www.shodan.io/host/${a}`,
+
+  // Domain
+  "domain-shodan":          a => `https://www.shodan.io/search?query=${a}`,
+  "domain-censys":          a => `https://app.censys.io/search?resource=hosts&q=${a}`,
+  "domain-virustotal":      a => `https://www.virustotal.com/gui/domain/${a}`,
+  "domain-securitytrails":  a => `https://securitytrails.com/domain/${a}`,
+  "domain-urlhaus":         a => `https://urlhaus.abuse.ch/browse.php?search=${a}`,
+  "domain-securityheaders": a => `https://securityheaders.com/?q=${a}&followRedirects=on`,
+  "domain-hackertarget-tr": a => `https://api.hackertarget.com/mtr/?q=${a}`,
+  "domain-tor":             a => `https://metrics.torproject.org/rs.html#search/${a}`,
+  "domain-dnsdumpster":     a => `https://dnsdumpster.com/`,
+  "domain-subdomainfinder": a => `https://crt.sh/?q=%25.${a}`,
+
+  // ASN
+  "asn-dnslytics": a => `https://dnslytics.com/bgp/${a.toLowerCase()}`,
+  "asn-bgptools":  a => `https://bgp.tools/as/${a.replace(/\D/g, "")}`,
+  "asn-he":        a => `https://bgp.he.net/${a}`,
+
+  // SSL
+  "ssl-crtsh":   a => `https://crt.sh/?q=${a}`,
+  "ssl-sslbl":   a => `https://sslbl.abuse.ch/ssl-certificates/sha1/${a}`,
+  "ssl-ssllabs": a => `https://www.ssllabs.com/ssltest/analyze.html?d=${a}`,
+
+  // URL
+  "url-urlscan":    a => `https://urlscan.io/search/#${a}`,
+  "url-checkhost":  a => `https://check-host.net/ip-info?host=${a}`,
+  "url-archive":    a => `https://web.archive.org/web/*/${a}`,
+  "url-aguse":      (a, e) => `https://www.aguse.jp/?url=${e}`,
+  "url-urlhaus":    a => `https://urlhaus.abuse.ch/browse.php?search=${a}`,
+  "url-httpstatus": a => `https://httpstatus.io/${a}`,
+
+  // Vulnerability
+  "vuln-nist":       a => `https://nvd.nist.gov/vuln/detail/${a}`,
+  "vuln-circl":      a => `https://vulnerability.circl.lu/vuln/${a}`,
+  "vuln-sploitus":   a => `https://sploitus.com/?query=${a}#exploits`,
+  "vuln-vulmon":     a => `https://vulmon.com/searchpage?q=${a}`,
+  "vuln-fortiguard": a => `https://fortiguard.com/search?q=${a}&engine=3`,
+  "vuln-exploitdb":  a => `https://www.exploit-db.com/search?cve=${a}`,
+  "vuln-cvedetails": a => `https://www.cvedetails.com/cve/${a}`,
+
+  // Hashes
+  "hash-virustotal":     a => `https://www.virustotal.com/gui/search/${a}`,
+  "hash-malshare":       a => `https://malshare.com/search.php?query=${a}`,
+  "hash-hybridanalysis": a => `https://www.hybrid-analysis.com/search?query=${a}`,
+  "hash-malwarebazaar":  a => `https://bazaar.abuse.ch/browse.php?search=${a}`,
+  "hash-triage":         a => `https://tria.ge/s?q=${a}`,
+
+  // Email
+  "email-haveibeenpwned": a => `https://haveibeenpwned.com/unifiedsearch/${a}`,
+  "email-hunter":         a => `https://hunter.io/email-verifier/${a}`,
+  "email-epieos":         a => `https://epieos.com/?q=${a}&t=email`,
+
+  // Social — Profile
+  "social-x":         a => `https://x.com/${a}`,
+  "social-github":    a => `https://github.com/${a}`,
+  "social-facebook":  a => `https://www.facebook.com/public/${a}`,
+  "social-instagram": a => `https://www.instagram.com/${a}`,
+  "social-linkedin":  a => `https://www.linkedin.com/in/${a}`,
+  "social-reddit":    a => `https://www.reddit.com/user/${a}`,
+
+  // Social — Search
+  "social-x-search":       a => `https://x.com/search?q=${a}`,
+  "social-facebook-search": a => `https://www.facebook.com/search/top/?q=${a}`,
+  "social-reddit-search":   a => `https://www.reddit.com/search/?q=${a}`,
+  "social-google-dork":     a => `https://www.google.com/search?q=%22${encodeURIComponent(a)}%22`,
+
+  // Encode / Decode
+  "encode-cyberchef": a => `https://gchq.github.io/CyberChef/#input=${btoa(a)}`,
+  "encode-dencode":   a => `https://dencode.com/string?v=${encodeURIComponent(a)}`,
+  "encode-base64":    a => `https://www.base64decode.org/?val=${encodeURIComponent(a)}`,
+
+  // Threat Intelligence
+  "ti-otx":       a => `https://otx.alienvault.com/indicator/search/${a}`,
+  "ti-pulsedive": a => `https://pulsedive.com/indicator/?ioc=${encodeURIComponent(a)}`,
+  "ti-threatfox": a => `https://threatfox.abuse.ch/browse.php?search=ioc%3A${a}`,
 };
 
 
-// when you click event listener function
+// ── Build context menus recursively ──────────────────────────
+function buildMenus(items, parentId = null) {
+  for (const item of items) {
+    const opts = {
+      id:       item.id,
+      title:    item.title,
+      contexts: ["selection", "link"],
+    };
+    if (parentId) opts.parentId = parentId;
 
+    chrome.contextMenus.create(opts);
+
+    if (item.children) {
+      buildMenus(item.children, item.id);
+    }
+  }
+}
+
+// Rebuild menus on install / update
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.contextMenus.removeAll(() => {
+    buildMenus(MENU_TREE);
+  });
+});
+
+
+// ── Refang function ──────────────────────────────────────────
+function refang(text) {
+  return text
+    .replace(/\[\.]/g, ".")
+    .replace(/hxxps?:\/\//gi, m => m.replace("hxxp", "http"))
+    .replace(/\[:\]\/\//g, "://")
+    .replace(/\[\/@]/g, "@")        // email defang
+    .trim();
+}
+
+
+// ── Click handler ────────────────────────────────────────────
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-    // strip leading and trailing spaces
-    if (info.selectionText) {
-        artifact = String(info.selectionText).trim();
-        v6URI = encodeURIComponent(info.selectionText);
-    } else if (info.linkUrl) {
-        var link = new URL(info.linkUrl);
-        artifact = link.host;
-    } else if (info.srcUrl) {
-        var src = new URL(info.srcUrl);
-        artifact = src.host;
-    }
+  let artifact = "";
 
-    artifact = refangArtifact(artifact);
+  if (info.selectionText) {
+    artifact = info.selectionText.trim();
+  } else if (info.linkUrl) {
+    try { artifact = new URL(info.linkUrl).host; } catch { artifact = info.linkUrl; }
+  } else if (info.srcUrl) {
+    try { artifact = new URL(info.srcUrl).host; } catch { artifact = info.srcUrl; }
+  }
 
-switch (info.menuItemId){
-    //whois
-    case "domaintools whois":
-        url = "https://whois.domaintools.com/"+artifact;
-        break;
+  artifact = refang(artifact);
+  const encoded = encodeURIComponent(artifact);
 
-    case "domainwatch whois":
-        url ="https://domainwat.ch/whois/"+artifact;
-        break;
+  const builder = URL_MAP[info.menuItemId];
+  if (!builder) return;  // clicked a parent menu, ignore
 
-    case "securitytrails whois":
-        url = "https://securitytrails.com/domain/"+artifact+"/dns";
-        break;
-
-    case "whoisds":
-        url = "https://whoisds.com/whois-lookup/lookup?domain="+artifact;
-        break;
-
-    //IPv4
-    case "abuseIPDB":
-        url = "https://www.abuseipdb.com/check/"+artifact;
-        break;
-
-    case "IPTracker":
-        url = "https://www.ip-tracker.org/lookup.php?ip="+artifact;
-        break;
-
-    case "hackertarget IP":
-        url = "https://api.hackertarget.com/reverseiplookup/?q="+artifact;
-        break;
-
-    case "censys IP":
-        url = "https://censys.io/ipv4/"+artifact;
-        break;
-
-    case "shodan":
-        url = "https://www.shodan.io/host/"+artifact;
-        break;
-
-    case "fofa":
-        url = "https://fofa.so/result?qbase64="+window.btoa(artifact);
-        break;
-
-    case "virustotal":
-        url = "https://virustotal.com/#/ip-address/"+artifact;
-        break;
-
-    case "greynoise":
-        url = "https://viz.greynoise.io/ip/"+artifact;
-        break;
-    case "dnslytics ip":
-        url = "https://dnslytics.com/ip/"+artifact;
-        break;
-
-    case "tor ip":
-        url = "https://metrics.torproject.org/rs.html#search/"+artifact;
-        break;
-
-    case "threatcrowd ip":
-        url = "https://www.threatcrowd.org/ip.php?ip="+artifact;
-        break;
-
-    case "ipalyzer":
-        url = "https://ipalyzer.com/"+artifact;
-        break;
-
-    case "bgpview ip":
-        url = "https://bgpview.io/ip/"+artifact;
-        break;
-    //IPv6
-
-    case "dnslytics v6":
-        url ="https://dnslytics.com/ipv6/"+artifact;
-        break;
-
-    case "ultratools v6":
-        url ="https://www.ultratools.com/tools/ipv6InfoResult?ipAddress="+v6URI;
-        break;
-
-    //ASN
-    case "dnslytics asn":
-        url ="https://dnslytics.com/bgp/"+artifact.toLowerCase();
-        break;
-
-    case "bgpview asn":
-        url = "https://bgpview.io/asn"+artifact;
-        break;
-
-
-    //Domain
-
-    case "censys Domain":
-        url = "https://censys.io/domain?q="+artifact;
-        break;
-
-    case "shodan Domain":
-        url = "https://www.shodan.io/search?query="+artifact;
-        break;
-
-    case "hackertarget traceroute":
-        url = "https://api.hackertarget.com/mtr/?q="+artifact;
-        break;
-
-    case "domainwatch":
-        url = "https://domainwat.ch/site/"+artifact;
-        break;
-
-    case "virustotal Domain":
-        url = "https://virustotal.com/#/domain/"+artifact;
-        break;
-
-    case "tor domain":
-        url = "https://metrics.torproject.org/rs.html#search/"+artifact;
-        break;
-
-    case "threatcrowd domain":
-        url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
-        break;
-
-    case "urlhaus domain":
-        url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
-        break;
-
-    case "securityheaders domain":
-        url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
-        break;
-
-    // certificate
-
-    case "crt.sh":
-        url="https://crt.sh/?q="+artifact;
-        break;
-
-    case "ssl-bl":
-        url ="https://sslbl.abuse.ch/ssl-certificates/sha1/"+artifact;
-        break;
-
-    //URL
-
-    case "urlscan":
-        url = "https://urlscan.io/api/v1/search/?q=domain:"+artifact;
-        break;
-
-    case "aguse":
-        url = "https://www.aguse.jp/?url="+encodeURIComponent(artifact);
-        break;
-
-    case "check-host":
-        url = "https://check-host.net/ip-info?host="+artifact;
-        break;
-
-    case "archive":
-        url = "https://web.archive.org/web/*/"+artifact;
-        break;
-
-    //Vuln
-    case "circl":
-        url = "https://cve.circl.lu/cve/"+artifact;
-        break;
-
-    case "fortiguard":
-        url = "https://fortiguard.com/search?q="+artifact+"&engine=3";
-        break;
-
-    case "sploitus":
-        url = "https://sploitus.com/?query="+artifact+"#exploits";
-        break;
-
-    case "vulmon":
-        url = "https://vulmon.com/searchpage?q="+artifact;
-        break;
-
-    case "cxsecurity":
-        url = "https://cxsecurity.com/cveshow/"+artifact;
-        break;
-
-    case "vulncode":
-        url = "https://www.vulncode-db.com/"+artifact;
-        break;
-
-    //hashes
-    case "malshare":
-        url = "https://malshare.com/search.php?query="+artifact;
-        break;
-
-    case "virustotal hash":
-        url = "https://www.virustotal.com/gui/search/"+artifact;
-        break;
-
-    case "hybrid analysis":
-        url = "https://www.hybrid-analysis.com/sample/"+artifact;
-        break;
-
-    //SNS
-
-    case "twitter":
-        url = "https://twitter.com/"+artifact;
-        break;
-
-    case "github":
-        url = "https://github.com/"+artifact;
-        break;
-
-    case "facebook":
-        url = "https://www.facebook.com/public/"+artifact;
-        break;
-
-    case "instagram":
-        url = "https://www.instagram.com/"+artifact;
-        break;
-
-    case "linkedin":
-        url = "https://www.linkedin.com/in/"+artifact;
-        break;
-
-    case "pinterest":
-        url = "https://www.pinterest.jp/"+artifact;
-        break;
-
-    //SNS timeline search
-    case "twittertl":
-        url = "https://twitter.com/search?q="+artifact;
-        break;
-
-    case "facebooktl":
-        url = "https://www.facebook.com/search/top/?q="+artifact;
-        break;
-
-    case "reddit":
-        url = "https://www.reddit.com/search/?q="+artifact;
-        break;
-
-};
-
-chrome.tabs.create({url: url});
+  const url = builder(artifact, encoded);
+  chrome.tabs.create({ url });
 });

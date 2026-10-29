@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrap BEAK OSINT</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-row">
+        <img src="../icons/icon48.png" alt="logo" class="logo">
+        <div>
+          <h1>SCRAP BEAK</h1>
+          <span class="subtitle">OSINT Toolkit</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick search bar -->
+    <div class="search-section">
+      <input type="text" id="artifact-input" placeholder="Enter IP, domain, hash, CVE, email…" autocomplete="off" spellcheck="false">
+      <button id="paste-btn" title="Paste from clipboard">📋</button>
+    </div>
+
+    <!-- Quick-action grid -->
+    <div class="quick-actions" id="quick-actions">
+      <button data-action="shodan"       class="action-btn" title="Shodan">🔎 Shodan</button>
+      <button data-action="virustotal"   class="action-btn" title="VirusTotal">🦠 VirusTotal</button>
+      <button data-action="abuseipdb"    class="action-btn" title="AbuseIPDB">🚫 AbuseIPDB</button>
+      <button data-action="censys"       class="action-btn" title="Censys">📡 Censys</button>
+      <button data-action="greynoise"    class="action-btn" title="GreyNoise">📊 GreyNoise</button>
+      <button data-action="crtsh"        class="action-btn" title="crt.sh">🔒 crt.sh</button>
+      <button data-action="urlscan"      class="action-btn" title="URLScan">🔗 URLScan</button>
+      <button data-action="nist"         class="action-btn" title="NIST NVD">🛡️ NVD</button>
+      <button data-action="otx"          class="action-btn" title="AlienVault OTX">🕵️ OTX</button>
+      <button data-action="hibp"         class="action-btn" title="Have I Been Pwned">🔑 HIBP</button>
+      <button data-action="cyberchef"    class="action-btn" title="CyberChef">🧰 CyberChef</button>
+      <button data-action="archive"      class="action-btn" title="Wayback Machine">🕰️ Archive</button>
+    </div>
+
+    <!-- Defang / Refang utilities -->
+    <div class="tools-section">
+      <h2>🛠️ Quick Tools</h2>
+      <div class="tools-grid">
+        <button id="defang-btn" class="tool-btn">Defang</button>
+        <button id="refang-btn" class="tool-btn">Refang</button>
+        <button id="base64enc-btn" class="tool-btn">Base64 Enc</button>
+        <button id="base64dec-btn" class="tool-btn">Base64 Dec</button>
+        <button id="urlencode-btn" class="tool-btn">URL Encode</button>
+        <button id="urldecode-btn" class="tool-btn">URL Decode</button>
+      </div>
+      <textarea id="tool-output" rows="3" readonly placeholder="Result will appear here…"></textarea>
+      <button id="copy-output" class="copy-btn" title="Copy result">📋 Copy</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Scrap BEAK OSINT v2.0</span>
+      <span>Right-click any selected text for full menu</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
